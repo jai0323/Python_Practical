@@ -1,0 +1,50 @@
+	# Demonstrate the following functions/methods which operates on lists in Python with suitable examples: len ( ) ,count( ) ,index ( ),append( ) ,insert( ) ,extend() ,remove( ), pop( ),reverse( ) ,copy( ) 
+
+myList = ['a', 'b', 'c', 'b']
+
+print("length = ",len(myList));
+print("count = ",myList.count(2));
+print("index = ",myList.index('c'));
+print("length = ",len(myList));
+
+
+my_list = [1, 2, 3, 2, 4]
+
+print("Length of the list:", len(my_list))
+
+print("Count of 2 in the list:", my_list.count(2))
+
+print("Index of 3 in the list:", my_list.index(3))
+
+my_list.append(5)
+print("After append(5):", my_list)
+
+my_list.insert(2, 10) 
+print("After insert(2, 10):", my_list)
+
+my_list.extend([6, 7])
+print("After extend([6, 7]):", my_list)
+
+my_list.remove(2)  
+print("After remove(2):", my_list)
+
+popped_element = my_list.pop(3)  
+print("Popped element:", popped_element)
+print("After pop(3):", my_list)
+
+my_list.reverse()
+print("After reverse():", my_list)
+
+copied_list = my_list.copy()
+print("Copied list:", copied_list)
+
+
+print('\n\n\n')
+# nested list 
+
+fruits = ['apple','banana','cherry']
+color = ['Red','Sweet','Tasty']
+
+for i in range (len(color)):
+    for j in range (len(fruits)):
+        print(color[i]+" "+fruits[j])
